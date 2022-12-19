@@ -36,7 +36,7 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="#home">
             <img src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -50,9 +50,12 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="!#"><img src={navIcon1} alt="" /></a>
-                <a href="!#"><img src={navIcon2} alt="" /></a>
-                <a href="!#"><img src={navIcon3} alt="" /></a>
+                 {/* eslint-disable-next-line */}
+                <a target="_blank" href="https://ua.linkedin.com/"><img src={navIcon1} alt="Icon" /></a>
+                {/* eslint-disable-next-line */}
+                <a target="_blank" href="https://www.facebook.com/"><img src={navIcon2} alt="Icon" /></a>
+                {/* eslint-disable-next-line */}
+                <a target="_blank" href="https://www.instagram.com/"><img src={navIcon3} alt="Icon" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
